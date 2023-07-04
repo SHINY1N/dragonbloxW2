@@ -1,0 +1,89 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "ShinyGui - Dragon Blox", HidePremium = false, SaveConfig = true, ConfigFolder = "ShinyGuiConfics"})
+
+local Player = game.Players.LocalPlayer
+local char = Player.Character
+local Humrootpart = char.HumanoidRootPart
+local JirenCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain10_JigrayArea.HumanoidRootPart.CFrame
+local FriezaCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain2_PurizaArea.HumanoidRootPart.CFrame
+local CoolerCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain3_CoolestArea.HumanoidRootPart.CFrame
+local AndroidCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain4_Droid1718Area.HumanoidRootPart.CFrame
+local CellCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain5_AtomArea.HumanoidRootPart.CFrame
+local BuuCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain6_JinbuArea.HumanoidRootPart.CFrame
+local BVegetaCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain7_VeggyArea.HumanoidRootPart.CFrame
+local GokuBCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain8_BlackKarrotArea.HumanoidRootPart.CFrame
+local BrolyCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain9_BrawlyArea.HumanoidRootPart.CFrame
+local SpawnCF = game:GetService("Workspace").Misc.SpawnTP.CFrame
+
+
+
+local Tab = Window:MakeTab({
+	Name = "AutoFarm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Autofam Stuff (Rejoin to Undo)"
+})
+Tab:AddButton({
+	Name = "Auto Click (Fast)",
+	Callback = function()
+      		while wait() do
+           local args = {
+    [1] = {
+        ["Camera"] = CFrame.new(7127.94629, 767.564453, -10080.8477, 0.694443047, -0.578470528, 0.427926153, -1.49011612e-08, 0.594715476, 0.803936243, -0.719547749, -0.558287919, 0.412995994),
+        ["SkillId"] = "1",
+        ["Began"] = true,
+        ["CFrame"] = CFrame.new(7110.30518, 731.7995, -10097.873, 0.694442809, -0.578470588, 0.427926362, -1.5264499e-08, 0.594715595, 0.803936183, -0.719547927, -0.55828768, 0.412995934),
+        ["Typ\208\181"] = 1,
+        ["Aim"] = Vector3.new(7087.04296875, 570.9751586914062, -10246.6572265625)
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillRemote"):FireServer(unpack(args))      
+  	end
+      end
+})
+
+Tab:AddButton({
+	Name = "Auto Prestige",
+	Callback = function()
+      		while wait(1) do
+                  game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("StatsService"):WaitForChild("RE"):WaitForChild("RebirthUp"):FireServer()
+  	end
+      end    
+})
+
+Tab:AddButton({
+	Name = "Auto Kaioken",
+	Callback = function()
+    while wait(1) do
+      		local args = {
+    [1] = {
+        ["Camera"] = CFrame.new(7162.78076, 577.245361, -10076.1436, 0.978101611, -0.0278607626, 0.206254631, 1.86264471e-09, 0.990999818, 0.133863702, -0.208127826, -0.130932301, 0.969298542),
+        ["SkillId"] = "8",
+        ["Began"] = true,
+        ["CFrame"] = CFrame.new(7160.42285, 574.155029, -10087.2246, -0.815149486, 7.46256779e-10, -0.579250693, -3.31721992e-08, 1, 4.79698308e-08, 0.579250693, 5.83176032e-08, -0.815149486),
+        ["Typ\208\181"] = 1,
+        ["Aim"] = Vector3.new(6835.04150390625, 625.083984375, -10243.125)
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillRemote"):FireServer(unpack(args))
+  	end
+      end    
+})
+
+Tab:AddButton({
+	Name = "Anti Afk",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/SHINY1N/Anti_AFK/main/ShinyBest'))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddLabel("Script is fully made by SHINY N")
