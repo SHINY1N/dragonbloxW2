@@ -5,16 +5,6 @@ local Window = OrionLib:MakeWindow({Name = "ShinyGui - Dragon Blox", HidePremium
 local Player = game.Players.LocalPlayer
 local char = Player.Character
 local Humrootpart = char.HumanoidRootPart
-local JirenCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain10_JigrayArea.HumanoidRootPart.CFrame
-local FriezaCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain2_PurizaArea.HumanoidRootPart.CFrame
-local CoolerCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain3_CoolestArea.HumanoidRootPart.CFrame
-local AndroidCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain4_Droid1718Area.HumanoidRootPart.CFrame
-local CellCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain5_AtomArea.HumanoidRootPart.CFrame
-local BuuCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain6_JinbuArea.HumanoidRootPart.CFrame
-local BVegetaCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain7_VeggyArea.HumanoidRootPart.CFrame
-local GokuBCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain8_BlackKarrotArea.HumanoidRootPart.CFrame
-local BrolyCF = game:GetService("Workspace").Misc.NPC.Quests.QuestNPCMain9_BrawlyArea.HumanoidRootPart.CFrame
-local SpawnCF = game:GetService("Workspace").Misc.SpawnTP.CFrame
 
 
 
